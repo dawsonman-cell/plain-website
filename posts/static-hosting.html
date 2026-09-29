@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Pages 同靜態網站心得 — Plain Website</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html">Plain Website</a>
+      <nav class="nav" aria-label="主選單">
+        <a href="../index.html">主頁</a>
+        <a href="../about.html">關於</a>
+        <a href="index.html" class="active">文章</a>
+        <a href="../contact.html">聯絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="post-meta"><time datetime="2026-09-30">2026-09-30</time></p>
+        <h1>GitHub Pages 同靜態網站心得</h1>
+        <p class="lead">用 GitHub Pages 發佈靜態站嘅實際流程同常見陷阱。</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container narrow post-body">
+        <p>GitHub Pages 對純靜態站幾乎係「推上去就得」：倉庫開好、選好 source branch（常見係 <code>main</code> 根目錄），等一兩分鐘就有公開網址。對專案頁嚟講，網址會係 <code>username.github.io/repo-name/</code>，所以相對路徑要特別小心。</p>
+        <p>最常見嘅踩坑係鏈接寫死成根路徑（例如 <code>/styles.css</code>）。喺用戶站（user site）或者本地開檔可能冇問題，但喺專案頁底下就會 404。較穩陣嘅做法係用相對路徑：根目錄頁面寫 <code>styles.css</code>，子資料夾（例如 <code>posts/</code>）寫 <code>../styles.css</code>，導航亦要用同一套邏輯。</p>
+        <p>另一個實際心得係：改完先本地用瀏覽器打開檢查導航同樣式，再 commit、push，然後用實際 Pages URL 驗證 HTTP 狀態，唔好假設「推咗就一定即時生效」。CDN 同建置隊列有時會有短暫延遲，稍等再試通常就會好。</p>
+        <p>免費、同 Git 工作流綁定、冇額外帳號——呢三點已經夠我繼續用 Pages 作為呢個示範站嘅正式發佈渠道。真正要動態功能時，再考慮其他服務不遲。</p>
+        <nav class="post-nav" aria-label="文章導航">
+          <a href="index.html">← 返回文章列表</a>
+          <a href="../index.html">回到主頁</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Plain Website · Dawson</p>
+    </div>
+  </footer>
+</body>
+</html>

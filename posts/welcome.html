@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>站點誕生：為什麼做一個靜態站 — Plain Website</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html">Plain Website</a>
+      <nav class="nav" aria-label="主選單">
+        <a href="../index.html">主頁</a>
+        <a href="../about.html">關於</a>
+        <a href="index.html" class="active">文章</a>
+        <a href="../contact.html">聯絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="post-meta"><time datetime="2026-09-30">2026-09-30</time></p>
+        <h1>站點誕生：為什麼做一個靜態站</h1>
+        <p class="lead">從零開始搭一個純 HTML／CSS 網站，講清楚動機同取捨。</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container narrow post-body">
+        <p>我開呢個 Plain Website，唔係想做一個「功能齊全」嘅平台，而係想證明一件事：好多時候，一個個人站或者小型專案介紹頁，根本唔需要框架、建置流程，甚至唔需要資料庫。幾份 HTML 加一條 CSS，已經夠用。</p>
+        <p>靜態站最大嘅好處係可預期。你改咗咩、推咗咩，線上就係咩；冇伺服器狀態、冇依賴版本對唔上、亦少咗一層部署工具鏈。對學習網頁基礎嚟講，呢種透明度特別有用——你睇到嘅結構，就係瀏覽器收到嘅結構。</p>
+        <p>當然，靜態唔等於「永遠唔升級」。內容多咗可以之後再加文章列表、用腳本產生索引，或者搬去有 CI 嘅流程。但起步時刻意克制，反而更容易養成清晰嘅資訊架構：主頁講咩、關於頁講咩、聯絡頁放咩，一目了然。</p>
+        <p>所以呢個站會繼續保持純靜態：易讀、易改、易託管。後面嘅文章會寫多啲關於託管同設計嘅實務筆記，希望對同樣想由簡入繁嘅人有用。</p>
+        <nav class="post-nav" aria-label="文章導航">
+          <a href="index.html">← 返回文章列表</a>
+          <a href="../index.html">回到主頁</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Plain Website · Dawson</p>
+    </div>
+  </footer>
+</body>
+</html>

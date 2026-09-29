@@ -259,3 +259,62 @@ h3 {
     padding: 2.5rem 0 1.75rem;
   }
 }
+
+/* Posts */
+.post-meta {
+  margin: 0 0 0.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.post-list li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.post-list h3 {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.post-list h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post-list h3 a:hover {
+  color: var(--accent);
+}
+
+.post-list .excerpt {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.post-nav {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.post-body p {
+  margin: 0 0 1rem;
+}
+
+.latest-posts {
+  padding: 0 0 3.5rem;
+}

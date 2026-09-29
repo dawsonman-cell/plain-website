@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>簡潔設計筆記 — Plain Website</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html">Plain Website</a>
+      <nav class="nav" aria-label="主選單">
+        <a href="../index.html">主頁</a>
+        <a href="../about.html">關於</a>
+        <a href="index.html" class="active">文章</a>
+        <a href="../contact.html">聯絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="post-meta"><time datetime="2026-09-30">2026-09-30</time></p>
+        <h1>簡潔設計筆記</h1>
+        <p class="lead">留白、字級、顏色同導航：幾條令閱讀更舒服嘅原則。</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container narrow post-body">
+        <p>簡潔設計唔係「少嘢就靚」，而係令讀者唔使同版面搏鬥。先決定內容層級：主標題、導語、正文、次要連結；之後再用間距同字重去表達呢啲層級，而唔係靠一堆裝飾線或者動畫。</p>
+        <p>顏色方面，我會固定一組很少嘅變數：背景、文字、次要文字、邊框、強調色。強調色只用於連結、按鈕同少量標籤，避免成頁都係高對比。字體優先用系統字，再補上適合香港／繁體嘅備援（例如 PingFang HK、Noto Sans TC），載入快，亦夠清晰。</p>
+        <p>導航要短而一致。每個頁面頂部同一個品牌名同同一組連結，目前頁面用輕微底色標示即可。行動裝置上，導航可以換行，但唔好藏到要點開先睇到——小站冇必要上漢堡選單。</p>
+        <p>最後，卡片同容器用適度圓角同淡陰影，只係為咗分隔內容區塊，唔係為咗「看起來好現代」。能刪就刪：如果一個視覺元素冇幫助閱讀或者導向，就唔應該存在。呢個站會繼續按呢個原則慢慢改。</p>
+        <nav class="post-nav" aria-label="文章導航">
+          <a href="index.html">← 返回文章列表</a>
+          <a href="../index.html">回到主頁</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Plain Website · Dawson</p>
+    </div>
+  </footer>
+</body>
+</html>
